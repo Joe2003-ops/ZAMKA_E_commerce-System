@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=lato:wght@300&display=swap");
+
+/* HOW TO MAKE A COMMENT IN VSCODE---CTRL-> / */
+/*KIST WEBSITE*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/* css variables */
+/* gloabal styles starts here */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --darkorange: darkorange; /*main color*/
+  --white: #fff;
+  --darkgodenrod: darkgoldenrod;
+  --fadedwhite: #bbbbbb;
+  --blue: #047aed;
+  --backgroundd: #2c3e50;
+  --blackish: #131313;
+  --pureblack: #000000;
+  --gradient1: linear-gradient(to right, rgba(8, 97, 138, 0.267), #575154);
+  --backgroundgrad1: -webkit-linear-gradient(to right, #fcb045, #790824d0, #0d72c5);
+  --backgroundgrad2: linear-gradient(to right, #fcb045, #e61616, #e9c70a);
+  --colorgradient: linear-gradient(to top, #ff0844 0%, #ee410c 100%);
+  --colorgradient3: linear-gradient(to top, #ff087b 0%, #ed1a52 100%)
+  --grdnt: linear-gradient(to right, rgba(153, 49, 153, 0.267), #a0477b);
+  --formshadow: 0 3px 10px rgba(0, 0, 0, 0.7); /*0 horizontal offset, 3px vertical offset, 10px blur,color :rgba() */
+  --gridshadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --box-shadow1: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  
+  --box-shadow2: 0 4px 8px 0 rgba(167, 78, 140, 0.9),
+    0 6px 20px 0 rgba(0, 0, 0, 0.9);
+
+}
+
+/*---------------------FOOTER SECTION---------------------------*/
+/* FOOTER SECTION */
+.footer{
+    background:  linear-gradient(to right, #181718, #2e2c2e,#181718);
+    box-shadow: var(--box-shadoww);
+    color: #fff;
+    padding: 100px 0 30px;
+    line-height: 20px;
+    font-size: 17px;
+    width: 100%;
+  }
+ .footer .grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;/* to push everything ar the center */
+  }
+  .flogo{
+    color: slateblue;
+  }
+  .footer .grid-container .grid-it{
+    width: 25%;
+    padding: 10px;
+  }
+ .footer .grid-container .grid-it h2{
+    margin-bottom: 30px;
+  
+  }
+  /*quotations */
+ .footer .grid-container .grid-it .open-quote, .flex-it .close-quote{
+    color: slateblue;
+    font-size: 12px;
+  }
+ .footer .grid-container .grid-it .open-quote{
+    position: relative;
+    left: -13px;
+  }
+ .footer .grid-container .grid-it .close-quote{
+    position: relative;
+    left: 225px;
+  }
+ .footer .grid-container .grid-it #navbar__logo{
+    margin-bottom: 20px;
+  }
+  
+ .footer .grid-container .grid-it h3{
+    position:relative;
+    width: fit-content;
+    margin-bottom: 40px;
+    font-size: 19px;
+  }
+ .footer .grid-container .grid-it ul{
+    list-style: none;
+  }
+  .wrapper .footer .grid-container .grid-it ul li{
+    margin-bottom: 7px;
+  }
+ .footer .grid-container .grid-it ul .email-id{
+    width: fit-content;
+    border-bottom: 1px solid slateblue;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+ .footer .grid-container  .grid-it ul li a{
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    font-size: 15px;
+    text-transform: capitalize;
+  
+    transition: all 0.3s ease;
+  }
+ .footer .grid-container .grid-it ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+  }
+ .footer .grid-container .grid-it form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid slateblue;
+    margin-bottom: 50px;
+  }
+ .footer .grid-container .grid-it form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+ .footer .grid-container .grid-it form input{
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    margin-left: 10px;
+    color: #ccc;
+    
+  }
+ .footer .grid-container .grid-it form button{
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+  }
+ .footer .grid-container .grid-it .social-links{
+    margin-top: 20px;
+  }
+ .footer .grid-container .grid-it .social-links a{
+    text-align: center;
+    font-size: 23px;
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  .footer .grid-container .grid-it .social-links a:hover{
+    color: slateblue;
+    transform: scale(1.3);
+  }
+
+  
+  /*  styling the horizontal line*/
+  .footer hr{
+    width: 98%;
+    border: 0;
+    border-bottom: 3px solid slateblue;
+    margin: 20px auto;
+  }
+  .footer .copyright{
+    text-align: center;
+  }
+  /* animation */
+ .footer .grid-container .grid-it h3 .underline{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  
+  }
+ .footer .grid-container .grid-it h3 .underline span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: slateblue;
+    border-radius: 3px;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+
+  
+  
+  /* FOR MEDIUM DEVICES SUCH AS TABLETS */
+  @media screen and (max-width: 992px) {
+    .footer{
+        bottom: unset;
+    }
+ .footer .grid-container .grid-it{
+        width: 50%;
+    }
+    
+  }
+  
+  /* FOR SMALLER SCREENS/DEVICES SUCH AS PHONES */
+  @media screen and (max-width: 600px) {
+    .footer{
+        bottom: unset;
+    }
+ .footer .grid-container .grid-it{
+        width: 100%;
+    }
+  }

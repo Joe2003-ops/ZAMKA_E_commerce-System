@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+
+/* HOW TO MAKE A COMMENT IN VSCODE---CTRL-> / */
+/*KIST WEBSITE*/
+*,
+*::after,
+*::before {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/* css variables */
+/* gloabal styles starts here */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --darkorange: darkorange; /*main color*/
+  --white: #fff;
+  --darkgodenrod: darkgoldenrod;
+  --fadedwhite: #bbbbbb;
+  --blue: #047aed;
+  --backgroundd: #2c3e50;
+  --blackish: #131313;
+  --pureblack: #000000;
+  --gradient1: linear-gradient(to right, rgba(8, 97, 138, 0.267), #575154);
+  --backgroundgrad1: -webkit-linear-gradient(to right, #fcb045, #790824d0, #0d72c5);
+  --backgroundgrad2: linear-gradient(to right, #fcb045, #e61616, #e9c70a);
+  --colorgradient3: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  --colorgradient3: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  --grdnt: linear-gradient(to right, rgba(153, 49, 153, 0.267), #a0477b);
+  --formshadow: 0 3px 10px rgba(0, 0, 0, 0.7); /*0 horizontal offset, 3px vertical offset, 10px blur,color :rgba() */
+  --gridshadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --box-shadow1: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  
+  --box-shadow2: 0 4px 8px 0 rgba(167, 78, 140, 0.9),
+    0 6px 20px 0 rgba(0, 0, 0, 0.9);
+
+}
+
+.hero__heading{
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--white);
+    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+    margin-bottom: -7px;
+    animation-name: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;/* enables the title to stay in its place after coming down instead of going ack to original state */
+    }
+    @keyframes heading {
+    0% {top: -600px;}
+    100% {top: 10px;}
+    }
+    
+    .hero__heading span{
+    /*to get the below gradient colors ,go to "uigradients.com*" then select gradient and copy here/ 
+    background: #8A2387;  /* fallback for old browsers */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    }
